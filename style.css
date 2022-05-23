@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  color: #333;
+  line-height: 1.6;
+  background-color: hsl(0, 100%, 74%);
+}
+
+.showcase {
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1rem;
+  margin: 2rem 0;
+  color: white;
+}
+
+.grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 100vh;
+}
+
+.showcase-text {
+  width: 28rem;
+  justify-self: end;
+}
+
+.showcase-form {
+  width: 28rem;
+}
+
+.offer {
+  margin: 20px 10px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+}
+
+.offer-span {
+  font-weight: normal;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+  padding: 20px;
+  margin: 10px;
+}
+
+.form-control {
+  margin: 30px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border-radius: 10px;
+  border: 1px solid #b4becb;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+}
+
+::placeholder {
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: hsl(154, 59%, 51%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.terms {
+  color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+    place-items: center;
+  }
+
+  .showcase-text {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .showcase-form {
+    align-self: start;
+    justify-self: center;
+  }
+}
